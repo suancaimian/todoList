@@ -1,0 +1,26 @@
+{
+  "name": "todoListServer",
+  "version": "1.0.0",
+  "description": "this is a server for todoList",
+  "main": "index.js",
+  "author": "scman",
+  "license": "MIT",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.2",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "concurrently \"tsc -w\" \"node dist/js/app.js\""
+  }
+}
